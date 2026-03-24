@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.3 on darwin)" generated="20260324 01:43:29.577" rpa="false" schemaversion="3">
+<suite id="s1" name="Register E2E" source="/Users/deepak1/PycharmProjects/RobotFramework_withPython/tests/register_e2e.robot">
+<test id="s1-t1" name="Login Standard Test User" line="9">
+<kw name="Login Ecommerce Website" library="e-commerce-registerpage" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20260324 01:43:29.719" level="INFO">Opening browser 'Chrome' to base url 'https://www.saucedemo.com/'.</msg>
+<msg timestamp="20260324 01:43:29.720" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<msg timestamp="20260324 01:44:49.170" level="WARN">Unable to obtain driver using Selenium Manager: Selenium Manager failed for: /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --output json.
+The chromedriver version cannot be discovered</msg>
+<msg timestamp="20260324 01:44:49.176" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20260324 01:44:49.178" level="FAIL">SeleniumManagerException: Message: Selenium Manager failed for: /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --output json.
+The chromedriver version cannot be discovered
+</msg>
+<status status="FAIL" starttime="20260324 01:43:29.718" endtime="20260324 01:44:49.186"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20260324 01:44:49.187" endtime="20260324 01:44:49.187"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=user-name</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20260324 01:44:49.187" endtime="20260324 01:44:49.187"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20260324 01:44:49.188" endtime="20260324 01:44:49.188"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id=login-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20260324 01:44:49.188" endtime="20260324 01:44:49.188"/>
+</kw>
+<status status="FAIL" starttime="20260324 01:43:29.718" endtime="20260324 01:44:49.188"/>
+</kw>
+<status status="FAIL" starttime="20260324 01:43:29.718" endtime="20260324 01:44:49.188">Setup failed:
+SeleniumManagerException: Message: Selenium Manager failed for: /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --output json.
+The chromedriver version cannot be discovered
+</status>
+</test>
+<doc>Test Case for opening ecommerce application</doc>
+<status status="FAIL" starttime="20260324 01:43:29.578" endtime="20260324 01:44:49.189"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Register E2E">Register E2E</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20260324 01:44:49.170" level="WARN">Unable to obtain driver using Selenium Manager: Selenium Manager failed for: /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome --output json.
+The chromedriver version cannot be discovered</msg>
+</errors>
+</robot>
